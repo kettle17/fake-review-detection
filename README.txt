@@ -1,18 +1,18 @@
-# Fake Review Detection Program using GPT-4o
-This repo contains the main program code for my University Masters thesis 'A Novel Machine Learning Solution to Detect AI-Generated Online Reviews using RoBERTa'.
+PRETRAINED MODELS ARE MISSING FROM THIS SUBMISSION DUE TO FILESIZE
+PLEASE DOWNLOAD THEM FROM ... AND PUT THEM IN THE "modelload" FOLDER 
 
-## Dataset
-A regular and shuffled version of my dataset 'FRDDS' (Fake Review Detection Dataset [Small]) is included. This dataset contains 2k GPT-4o generated entries and 2k human entries.
+========================
+Initialisation
+========================
 
-## Models
-Pretrained models are missing from this upload, and they are available to download from https://osf.io/zecv5/.
-The dataset is also available but is already included in this upload.
+By running main.py in CMD, the program will start.
+It will first output if the GPU is available for use - outputting "cuda:0" if available.
+If this is not the case then it will output a warning as CPU computation takes much longer than GPU computation during the training process.
 
-## Results
-Overall model results returned a 98% accuracy using the model trained on text. A 99.71% accuracy was achieved by the title+text model (merging amazon review titles and text together).
+========================
+Dataset loading
+========================
 
-## Instructions
-Run main.py in CMD. If CUDA is not available, it will output a warning.
 The program will then prompt the user for their choice of dataset:
 1. FRDDS mode - The program will then check for the FRDDS dataset being present, and load it.
 2. Custom mode - The program will take a name of a custom csv dataset in the dataset/custom folder and load it. It must be in the same general format as FRDDS.
@@ -28,7 +28,9 @@ The program will then prompt the user for their choice in dataset mode:
 
 This will load the dataset in this mode, and all training and testing will also be done in this mode.
 
-### Training
+========================
+Training
+========================
 
 The program will then prompt the user if they would want to use the best pretrained models, or if they want to train their own. Choosing the pretrained models will load the model associated with the dataset mode chosen earlier, and skip to testing. Choosing a custom model will instantiate a new RobertaForBinaryClassification model.
 
@@ -36,8 +38,11 @@ The program will then ask if the user wants to use existing best parameters for 
 On completion of an epoch, the program will output the model accuracy on the eval set, and training and evaluation losses. 
 On completion of model training, the program will output the best epoch's accuracy, and prompt to use it in testing.
 
-### Testing
+========================
+Testing
+========================
 If the user has skipped training, the program will redirect here.
 
 The program will test the model on the test set, and display the testing accuracy along with other metrics.
 The program will then hang until the user chooses to exit.
+

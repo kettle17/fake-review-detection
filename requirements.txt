@@ -1,0 +1,9 @@
+torch == 2.2.2+cu121
+torchaudio == 2.2.2+cu121
+torchvision == 0.17.2
+numpy == 1.26.4
+nltk == 3.7
+transformers == 4.24.0
+tqdm == 4.64.1
+scikit-learn == 1.2.1
+pandas == 1.5.3
