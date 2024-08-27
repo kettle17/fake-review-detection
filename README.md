@@ -1,4 +1,4 @@
-# Fake Review Detection Program using GPT-4o
+# Fake Review Detection Program with GPT-4o text in mind
 This repo contains the main program code for my University Masters thesis 'A Novel Machine Learning Solution to Detect AI-Generated Online Reviews using RoBERTa'.
 
 ## Dataset
