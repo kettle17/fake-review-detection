@@ -3,14 +3,17 @@ This repo contains the main program code for my University Masters thesis 'A Nov
 
 ## Dataset
 A regular and shuffled version of my dataset 'FRDDS' (Fake Review Detection Dataset [Small]) is included. 
+
 This dataset contains 2k GPT-4o generated entries and 2k human entries.
 
 ## Models
 Pretrained models are missing from this upload, and they are available to download from https://osf.io/zecv5/.
+
 The dataset is also available but is already included in this upload.
 
 ## Results
 Overall model results returned a 98% accuracy using the model trained on text.
+
 A 99.71% accuracy was achieved by the title+text model (merging amazon review titles and text together).
 
 ## Instructions
